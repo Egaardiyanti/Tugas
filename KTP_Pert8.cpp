@@ -43,18 +43,35 @@ void pilihAgama(int i) {
     int pilih;
     do {
         cout << "Pilih Agama:\n";
-        cout << "1. Islam\n2. Kristen\n3. Katolik\n4. Hindu\n5. Buddha\n6. Konghucu\n";
+        cout << "1. Islam\n";
+        cout << "2. Kristen\n";
+        cout << "3. Katolik\n";
+        cout << "4. Hindu\n";
+        cout << "5. Buddha\n";
+        cout << "6. Konghucu\n";
         cout << "Pilihan Anda: ";
         cin >> pilih;
         cin.ignore();
 
         switch (pilih) {
-            case 1: data[i][10] = "Islam"; break;
-            case 2: data[i][10] = "Kristen"; break;
-            case 3: data[i][10] = "Katolik"; break;
-            case 4: data[i][10] = "Hindu"; break;
-            case 5: data[i][10] = "Buddha"; break;
-            case 6: data[i][10] = "Konghucu"; break;
+            case 1: 
+                data[i][10] = "Islam"; 
+                break;
+            case 2: 
+                data[i][10] = "Kristen"; 
+                break;
+            case 3: 
+                data[i][10] = "Katolik"; 
+                break;
+            case 4: 
+                data[i][10] = "Hindu"; 
+                break;
+            case 5: 
+                data[i][10] = "Buddha"; 
+                break;
+            case 6: 
+                data[i][10] = "Konghucu"; 
+                break;
             default:
                 cout << "Pilihan tidak valid!\n";
                 data[i][10] = "";
